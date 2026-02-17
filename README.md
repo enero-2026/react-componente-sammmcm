@@ -1,16 +1,37 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/eotZkQWX)
-# react-native-expo
-Mi primer proyecto de React con Expo GO
+# Instrucciones Ejercicio de Componente reutilizable
+Crear un componente de React
 
+Crear aplicación React
+1. En terminal: **npx create-expo-app hola-mundo --template**
+2. Seleccionar **Blank / En blanco**
+3. Escribir el nombre de tu aplicación
+4. Correr el comando **npm run web**
+5. Puedes presionar en la terminal la tecla i para correr el simuador de iOS o a para el de Android
+6. Puedes escanear el código QR y otorgar permisos en tu celular a Expo GO, esto te permitirá abrir tu proyecto en el celular
 
-1. Instalar Node https://nodejs.org/en/download 
-2. Probar aplicación
-   a. Instalar Android Studio para utilizar Simulador de Android en tu computadora https://developer.android.com/studio
-   b. Instalar la app Expo GO en tu celular para utilizar tu celular para probar la aplicación https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en 
-4. En terminal: **npx create-expo-app hola-mundo --template**
-7. Seleccionar **Blank / En blanco**
-8. Escribir el nombre de tu aplicación
-9. Correr el comando **npm run web**
-10. Puedes presionar en la terminal la tecla i para correr el simuador de iOS o a para el de Android
-11. Puedes escanear el código QR y otorgar permisos en tu celular a Expo GO, esto te permitirá abrir tu proyecto en el celular
-12. Subir el proyecto en Github. No subir dependencias asegurarse de que el .gitignore esté actualizado
+Crear Componente de React
+1. Crear un archivo llamado Alumno.js
+2. Lógica del componente...
+```javascript
+
+import { StyleSheet, Text, View, Button } from 'react-native';
+ 
+export default Alumno(props){
+
+return(
+<View>
+   <Text>{props.nombre}</Text>
+   <Text>{props.matricula}</Text>
+</View>
+)
+}
+```
+
+3. Agrega los estilos utilizando el prop style
+
+Importa el componente creado en App.js
+1. Para crear una instancia utilizarás la etiqueta <Alumno></Alumno> proporcionando en los props de la forma:
+   <Alumno nombre="Diego" matricula="123ABC"></Alumno>
+2. Implementa diferentes instancias de ese componente
+    
+>>>>>>> 690b466cc2d893566c61a73bc0625835333b690c
